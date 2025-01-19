@@ -8,3 +8,16 @@
       font-family: "Inter", system-ui, sans-serif;
     }
   }
+
+.nav-item {
+    transition: opacity 0.25s ease-in-out;
+}
+
+.navbar-nav:hover .nav-item {
+    opacity: 0.25;
+}
+
+.navbar-nav:hover .nav-item:hover {
+    opacity: 1;
+}
+
