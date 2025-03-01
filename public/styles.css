@@ -63,6 +63,10 @@ h3 {
   color: var(--zinc-600);
 }
 
+h3.headlineNow {
+  color: white;
+}
+
 p {
   color: var(--zinc-500);
   font-size: 1rem;
@@ -93,8 +97,9 @@ section {
   padding-top: 5rem;
 }
 
-.headline {
-  margin-bottom: 0.75rem;
+.headlineNow {
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
 }
 
 /* Lists */
