@@ -5,6 +5,7 @@
   --black: #000000;
   --white: #ffffff;
   --zinc-500: #71717a;
+  --zinc-600: #505055;
   --border-color: #262626;
   --bg-code: #171717;
 }
@@ -52,6 +53,11 @@ a {
 h2 {
   font-size: 1.5rem;
   margin-bottom: 1.25rem;
+}
+
+h3 {
+  margin-bottom: 1.25rem;
+  color: var(--zinc-600);
 }
 
 p {
@@ -175,4 +181,9 @@ footer a:hover {
 /* Flex-grow for spacing */
 .flex-grow {
   flex-grow: 1;
+}
+
+/* 404 */
+.gobackhome {
+  margin-top: 20px;
 }
