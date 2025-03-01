@@ -84,7 +84,7 @@ section {
   padding-top: 5rem;
 }
 
-section p {
+.headline {
   margin-bottom: 0.75rem;
 }
 
@@ -115,7 +115,7 @@ ul li span:first-child {
 #readme > div > div:first-child {
   background-color: var(--bg-code);
   border-bottom: 1px solid var(--border-color);
-  padding: 0.5rem 0.75rem;
+  padding: 10px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -128,6 +128,8 @@ ul li span:first-child {
 #readme > div > div:last-child {
   padding: 1rem 0.75rem;
 }
+
+
 
 /* SVG icon */
 svg {
