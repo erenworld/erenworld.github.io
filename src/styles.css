@@ -9,6 +9,10 @@
   --bg-code: #171717;
 }
 
+::selection {
+    background-color: #c5c3c37c;
+}
+
 * {
   margin: 0;
   padding: 0;
