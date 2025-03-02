@@ -20,35 +20,29 @@
         setTimeout(display_paris_time, 1000);
       }
 
-      // Fonction pour gérer le toggle du thème
       function setupThemeToggle() {
         const themeToggle = document.getElementById('themeToggle');
         const toggleText = themeToggle.querySelector('.toggle-text');
         const html = document.documentElement;
         
-        // Vérifier la préférence sauvegardée
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme === 'light') {
           html.classList.add('light-mode');
           updateToggleIcon('moon');
         }
         
-        // Basculer le thème au clic
         themeToggle.addEventListener('click', function() {
           if (html.classList.contains('light-mode')) {
-            // Passer au mode sombre
             html.classList.remove('light-mode');
             localStorage.setItem('theme', 'dark');
             updateToggleIcon('sun');
           } else {
-            // Passer au mode clair
             html.classList.add('light-mode');
             localStorage.setItem('theme', 'light');
             updateToggleIcon('moon');
           }
         });
         
-        // Mettre à jour l'icône
         function updateToggleIcon(type) {
           const iconSvg = themeToggle.querySelector('svg');
           
@@ -72,7 +66,6 @@
         }
       }
 
-      // Charger les deux fonctions au démarrage
       window.onload = function() {
         display_paris_time();
         setupThemeToggle();

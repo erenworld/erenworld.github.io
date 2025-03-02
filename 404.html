@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./public/pixel.png" type="image/x-icon">
-    <title>404 not found</title>
+    <title>home - eren</title>
+    <link rel="stylesheet" href="./public/styles.css">
     <link rel="stylesheet" href="./public/styles.css">
     <script>
       function display_paris_time() {
@@ -19,7 +20,6 @@
         setTimeout(display_paris_time, 1000);
       }
 
-      // Fonction pour gérer le toggle du thème
       function setupThemeToggle() {
         const themeToggle = document.getElementById('themeToggle');
         const toggleText = themeToggle.querySelector('.toggle-text');
@@ -32,7 +32,6 @@
           updateToggleIcon('moon');
         }
         
-        // Basculer le thème au clic
         themeToggle.addEventListener('click', function() {
           if (html.classList.contains('light-mode')) {
             // Passer au mode sombre
@@ -40,14 +39,12 @@
             localStorage.setItem('theme', 'dark');
             updateToggleIcon('sun');
           } else {
-            // Passer au mode clair
             html.classList.add('light-mode');
             localStorage.setItem('theme', 'light');
             updateToggleIcon('moon');
           }
         });
         
-        // Mettre à jour l'icône
         function updateToggleIcon(type) {
           const iconSvg = themeToggle.querySelector('svg');
           
@@ -70,16 +67,14 @@
           }
         }
       }
-
-      // Charger les deux fonctions au démarrage
       window.onload = function() {
         display_paris_time();
         setupThemeToggle();
       };
     </script>
   </head>
-  <body class="bg-black" onload="display_paris_time()">
-    <div class="max-w-2xl mx-auto container_ text-white font-geist py-5 flex flex-col min-h-screen">
+  <body class="bg-black">
+    <div class="container_">
       <header class="items-center  justify-between">
         <a href="/">eren</a>
         <div class="flex items-center">
@@ -105,19 +100,18 @@
           </div>
         </div>
     </header>
-    
       
-      <section id="myself" class="pt-20 pb-5 flex-grow">
-        <p class="text-2xl pb-5">“Spend each day trying to be a little wiser than you were when you woke up. Day by day, and at the end of the day-if you live long enough-like most people, you will get out of life what you deserve.”</p>
-        <ul class="gobackhome">
-            <li>
-                <span class="w-3 h-[2px] bg-zinc-500"></span>
-                <a href=""><span class="text-white font-mono"><a href="/">go back home</a></span></a>
-            </li>
-        </ul>
-      </section>
+    <section id="myself" class="pt-20 pb-5 flex-grow">
+      <p class="text-2xl pb-5">“Spend each day trying to be a little wiser than you were when you woke up. Day by day, and at the end of the day-if you live long enough-like most people, you will get out of life what you deserve.”</p>
+      <ul class="gobackhome">
+          <li>
+              <span class="w-3 h-[2px] bg-zinc-500"></span>
+              <a href=""><span class="text-white font-mono"><a href="/">go back home</a></span></a>
+          </li>
+      </ul>
+    </section>    
       <footer class=" pt-6">
-        <div class="text-zinc-500 flex items-center justify-between">
+        <div class="flex-j text-zinc-500  items-center justify-between">
           <a href="" class="hover:text-white">eren turkoglu</a>
           <div id="paris_time" class="text-sm">
           </div>
