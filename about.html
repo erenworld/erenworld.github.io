@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./public/pixel.png" type="image/x-icon">
-    <title>about - eren</title>
+    <title>home - eren</title>
+    <link rel="stylesheet" href="./public/styles.css">
     <link rel="stylesheet" href="./public/styles.css">
     <script>
       function display_paris_time() {
@@ -18,26 +19,113 @@
         document.getElementById('paris_time').innerHTML = parisTime;
         setTimeout(display_paris_time, 1000);
       }
+
+      // Fonction pour gérer le toggle du thème
+      function setupThemeToggle() {
+        const themeToggle = document.getElementById('themeToggle');
+        const toggleText = themeToggle.querySelector('.toggle-text');
+        const html = document.documentElement;
+        
+        // Vérifier la préférence sauvegardée
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+          html.classList.add('light-mode');
+          updateToggleIcon('moon');
+        }
+        
+        // Basculer le thème au clic
+        themeToggle.addEventListener('click', function() {
+          if (html.classList.contains('light-mode')) {
+            // Passer au mode sombre
+            html.classList.remove('light-mode');
+            localStorage.setItem('theme', 'dark');
+            updateToggleIcon('sun');
+          } else {
+            // Passer au mode clair
+            html.classList.add('light-mode');
+            localStorage.setItem('theme', 'light');
+            updateToggleIcon('moon');
+          }
+        });
+        
+        // Mettre à jour l'icône
+        function updateToggleIcon(type) {
+          const iconSvg = themeToggle.querySelector('svg');
+          
+          if (type === 'moon') {
+            iconSvg.innerHTML = `
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            `;
+          } else {
+            iconSvg.innerHTML = `
+              <circle cx="12" cy="12" r="5" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+              <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+              <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+              <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+              <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+            `;
+          }
+        }
+      }
+
+      // Charger les deux fonctions au démarrage
+      window.onload = function() {
+        display_paris_time();
+        setupThemeToggle();
+      };
     </script>
   </head>
-  <body class="bg-black" onload="display_paris_time()">
-    <div class="max-w-2xl mx-auto container_ text-white font-geist py-5 flex flex-col min-h-screen">
-      <header class=" items-center flex justify-between">
-          <a href="/">eren</a>
-          <div class="text-zinc-500">
-            <a href="https://drive.google.com/file/d/1bCiyVa-ZQjeVJZutK9Iyr49U3wiHG1ob/view?usp=sharing" class="pr-3 hover:text-white">resume</a>
+  <body class="bg-black">
+    <div class="container_">
+      <header class="items-center  justify-between">
+        <a href="/">eren</a>
+        <div class="flex items-center">
+          <div class="flex text-zinc-500">
+            <a href="https://drive.google.com/file/d/1bCiyVa-ZQjeVJZutK9Iyr49U3wiHG1ob/view?usp=sharing" target="_blank" class="pr-3 hover:text-white">resume</a>
             <a class="pr-3 hover:text-white" href="./blog.html">blog</a>
             <a class="pr-3 hover:text-white" href="./now.html">now</a>
-            <a class="pr-3 hover:text-white" href="./about.html">about</a>          </div>
-      </header>
+            <a class="pr-3 hover:text-white" href="./about.html">about</a>
+            <button class="theme-toggle" id="themeToggle">
+              <span class="toggle-text"></span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+    </header>
       
       <section id="myself" class="pt-20 pb-5 flex-grow">
-        <h2 class="text-2xl pb-5">About</h2>
-        <p class="text-zinc-500 text-md">I'm a design engineer, passionate about starting my own ventures. My approach to business is all about keeping things simple and practical, following basic principles that work. I believe in sticking to a plan and doing things reliably. Consistency is key for me - it's what keeps everything running smoothly.
-        </p>
+        <h2 class="text-2xl pb-5">Blog</h2>
+        <div class="container">
+            <div class="article">
+                <ul>
+                    <li><a href="#">make a website now</a><span class="date">22/01</span></li>
+                    <li><a href="#">my proudest moments</a><span class="date">24/02</span></li>
+                    <li><a href="#">rumi's quotes</a><span class="date">24/02</span></li>
+                    <li><a href="#">happiness is a choice</a><span class="date">19/02</span></li>
+                    <li><a href="#">invest in the future you want to see</a><span class="date">11/02</span></li>
+                    <li><a href="#">the biggest lesson that school doesn't taught me</a><span class="date">27/01</span></li>
+                    <li><a href="#">loneliness</a><span class="date">22/01</span></li>
+                    <li><a href="#">how to like yourself?</a><span class="date">03/01</span></li>
+                </ul>
+            </div>
+        </div>
       </section>
       <footer class=" pt-6">
-        <div class="text-zinc-500 flex items-center justify-between">
+        <div class="flex-j text-zinc-500  items-center justify-between">
           <a href="" class="hover:text-white">eren turkoglu</a>
           <div id="paris_time" class="text-sm">
           </div>
