@@ -248,6 +248,12 @@ footer a:hover {
     cursor: help;
 }
 
+/* about */
+
+.aboutParagraph {
+    padding: 13px 0;
+}
+
 /* blog */
 .container {
     display: flex;
