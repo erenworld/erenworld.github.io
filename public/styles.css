@@ -48,8 +48,8 @@ footer {
 }
 /* Layout */
 .container_ {
+    width: 100%;
     max-width: 36rem;
-    min-width: 36rem;
     margin: 0 auto;
     padding: 1.25rem;
     display: flex;
@@ -317,3 +317,10 @@ footer a:hover {
     text-decoration: underline;
  }
  
+
+ @media (max-width: 576px) {
+    .container_ {
+        min-width: auto;
+        padding: 1rem;
+    }
+}
