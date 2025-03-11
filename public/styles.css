@@ -318,6 +318,14 @@ footer a:hover {
  }
  
 
+.underline {
+    text-decoration: underline;
+    cursor:help;
+}
+.underline:hover {
+    text-decoration: none;
+}
+
  @media (max-width: 576px) {
     .container_ {
         min-width: auto;
