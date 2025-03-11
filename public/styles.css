@@ -20,6 +20,14 @@
     --bg-code: #f7f7f7;
 }
 
+:root {
+    --ios-navbar: black;
+}
+:root.light-mode {
+    --ios-navbar: whiteblack;
+}
+
+
 body {
     display: flex;
     flex-direction: column;
@@ -29,6 +37,10 @@ body {
     font-family: "Geist Mono", serif;
     line-height: 1.5;
     transition: background-color 0.3s, color 0.3s;
+}
+
+meta[name="theme-color"] {
+    content: var(--ios-navbar);
 }
 
 footer {
