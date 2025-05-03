@@ -350,3 +350,38 @@ footer a:hover {
         padding: 1rem;
     }
 }
+
+.musicImg {
+    height: 40px;
+    border-radius: 90px;
+    margin-bottom: 9px;
+    border: 1px solid rgb(238, 237, 237);
+    animation: rotation 5s linear infinite;
+}
+
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+.musicDiv {
+    display: flex;
+    align-items: center;
+}
+
+.musicSecondDiv {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.music {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
+}
