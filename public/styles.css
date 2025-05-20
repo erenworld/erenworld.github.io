@@ -355,7 +355,6 @@ footer a:hover {
     height: 40px;
     border-radius: 90px;
     margin-bottom: 9px;
-    border: 1px solid rgb(238, 237, 237);
     animation: rotation 5s linear infinite;
 }
 
