@@ -179,7 +179,6 @@ ul li {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 0.5rem;
 }
 
 ul li span:first-child {
@@ -281,7 +280,6 @@ footer a:hover {
 }
 
 .article li {
-    margin-bottom: 10px;
     font-size: 0.9rem;
     color: var(--zinc-300);
     display: flex;
