@@ -147,6 +147,11 @@ p {
   justify-content: center;
   margin-top: 15px;
 }
+
+.link {
+  color: rgb(0, 0, 238);
+}
+
 .intro {
   max-width: 550px;
 }
