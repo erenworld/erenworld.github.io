@@ -160,10 +160,18 @@ p {
   .img {
     max-width: 80%; /* ou 70%, selon ce que tu veux */
   }
+
+  section {
+    padding: 0 40px;
+  }
 }
 
 @media (max-width: 480px) {
   .img {
     max-width: 60%;
+  }
+
+  section {
+    padding: 0 70px;
   }
 }
