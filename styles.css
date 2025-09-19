@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 html,
 body,
 div,
@@ -131,47 +133,6 @@ i {
   font-style: italic;
 }
 
-h4 {
-  font-weight: 400;
-  margin-bottom: 15px;
-}
-
 p {
-  padding: 5px 0px;
-  line-height: 20px;
-}
-
-.links {
-  display: flex;
-  gap: 13px;
-  justify-content: center;
-  margin-top: 15px;
-}
-
-.link {
-  color: rgb(0, 0, 238);
-}
-
-.intro {
-  max-width: 550px;
-}
-
-@media (max-width: 768px) {
-  .img {
-    max-width: 80%; /* ou 70%, selon ce que tu veux */
-  }
-
-  section {
-    padding: 0 40px;
-  }
-}
-
-@media (max-width: 480px) {
-  .img {
-    max-width: 60%;
-  }
-
-  section {
-    padding: 0 70px;
-  }
+  font-family: 'PT Serif', serif;
 }
