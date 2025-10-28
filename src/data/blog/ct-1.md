@@ -10,7 +10,6 @@ I’ve been inspired by [Thorsten Ball](https://thorstenball.com/) to share my o
 - [bleu de chauffe](https://www.bleu-de-chauffe.com/en/) - some beautiful bags and accessories made in France.
 - [Fonts in use](https://fontsinuse.com/) - I searched up a font and stumbled on this, nice mood board.
 - [Do the simplest thing that could possibly work](https://www.seangoedecke.com/the-simplest-thing-that-could-possibly-work/) - I try to think this way when building systems, but it's actually much harder in practice.
-- [nix-darwin](https://github.com/nix-darwin/nix-darwin) - creating a declarative OS intrigues me, because I like having all aspects of it expressed in clear text. Kinda like how I prefer having an `init.lua` (my Neovim [config](https://github.com/pzrsa/dotfiles/blob/main/nvim/init.lua)) that could be reproduced on other machines.
 - [You're a Slow Thinker. Now what?](https://chillphysicsenjoyer.substack.com/p/youre-a-slow-thinker-now-what) - I think I'm a mix of both a fast and slow thinker. I think fast in social interactions, but I struggle with quick mathematics on the spot.
 
 hope you enjoyed! do share anything you've stumbled on recently.
