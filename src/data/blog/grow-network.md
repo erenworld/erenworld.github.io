@@ -1,60 +1,69 @@
 ---
 date: "2024-12-16"
-title: "how to grow a network from scratch (especially when you're young)"
+title: "How to grow a network from scratch (especially when you're young)"
 ---
 
-before I joined Google in 2021, I was 17 years old, barely knew how to program and had no connections whatsoever in the tech industry.
+In high school, I read my first book: _How to Win Friends and Influence People_ by Dale Carnegie.  
+Early on, I learned the immense value of building a strong network — especially from scratch, with complete strangers.
 
-but early on I learned the immense value of building a strong network, especially from scratch with complete strangers.
+This also went hand in hand with realizing that having a referral (at least in the tech industry) greatly increases the chances of your application being considered, since it literally lands right in a recruiter’s lap.
 
-this also went hand in hand with learning that having a referral (at least in the case of the tech industry), greatly improves the chances of your application being considered, given it literally falls in a recruiters lap.
+I'm now 21, and over the past four years, I feel like I've built a pretty strong network — especially for someone who started with zero connections.
 
-I'm now 21, and over the past 4 years I feel like I've built a pretty strong network, especially for someone who didn't have any connections initially.
+Not only am I "connected" with some fascinating people, but I’ve also built genuine friendships with them.
 
-I've been very intentional with it because I chose to have quality over quantity. in the case of linkedin, I only have ~160 connections, in contrast to people who spam their way to 500+ without any idea of the person.
+So, in this short post, I’ll be sharing a few thoughts on how you can get your foot in the door.
 
-not only am I "connected" with some fascinating people, I've built genuine friendships with them.
+If you're young, ambitious, and somewhat outgoing, I hope this will be valuable to you. I definitely wish I had read something like this a few years ago.
 
-so, in this short post I'll be sharing some tips on how you could get your foot in the door.
+This isn’t some magical “hack” or manipulation tactic — I’m just someone who’s learned how to connect with people from all walks of life.
 
-if you're young, ambitious and somewhat outgoing, then I hope this will be of some value to you. I certainly would've wanted a post like this a few years ago.
+---
 
-this isn't some crazy voodoo advice to get your way, I'm just some guy who knows how to make connections with people from all walks of life.
+### In this post:
 
-in this post:
+1. Find people similar to you
+2. Be curious
+3. Being young lets you off the hook
 
-1. find people similar to you
-2. be curious
-3. being young lets you off the hook
+---
 
-# find people similar to you
+## 1. Find people similar to you
 
-my parents are Persian, and I've been made aware of how talented/vast we are when it comes to producing engineering talent.
+My parents are Turkish, and I’ve always been aware of how talented and diverse we are when it comes to producing engineering talent.
 
-so, naturally I pretty much only reached out to other Persians, since they'd be more willing to help out one of their own.
+Naturally, I initially reached out to other Turks, since they were often more willing to help out one of their own.
 
-if you're not from a thick culture, then honestly it doesn't make a huge difference, just something you have less to connect on.
+If you’re not part of a tight-knit culture, that’s totally fine — it just means you’ll have fewer obvious things to connect on, but it’s not a disadvantage.
 
-# be curious
+---
 
-one mistake so many people make is sending some generic message like "hey, how's it going? I graduated at X so I'm applying for Y, would you give me a referral?". you're probably thinking that this sounds so uninspired, but you'd be surprised with how many messages I've received with a similar tone.
+## 2. Be curious
 
-remember, **you do not know this person**. show a reason why they should care for your career.
+One mistake many people make is sending a generic message like:
 
-what I did was reach out to people who I knew had some interesting story or background.
+> “Hey, how’s it going? I graduated from X and I’m applying for Y — could you give me a referral?”
 
-that could be a website, their resume/linkedin experience, their current company. there are so many things you can touch up on in your msg that sparks a curious conversation.
+You might think that sounds uninspired — and you’d be right — but you’d be surprised how many messages like that people actually receive.
 
-remember that the other person probably receives dozens of messages asking for referrals from desperate candidates, so don't send a generic msg further stating the obvious.
+Remember: **you don’t know this person.** Show them why they should care about you and your story.
 
-# being young lets you off the hook
+What I did was reach out to people whose background genuinely intrigued me — maybe they built a cool project, had an interesting career path, or worked at a company I admired.
 
-now, I'm not saying this for you to do dumb stuff and then say "it's fine I'm young", but I am also saying that being young lets you off the hook in many cases.
+There are countless details you can pick up on — their website, résumé, LinkedIn profile — and use as a natural entry point to start a real conversation.
 
-jokes aside in all honesty, if you're young, and by young I mean in your 20s, you literally have nothing to lose reaching out to strangers. in fact, it's the best chance for you to do it.
+Keep in mind: most people get dozens of cold messages asking for referrals. Don’t be one more line in their inbox that sounds like everyone else.
 
-I've asked some silly questions to people, yet they find it quite endearing because of my age.
+---
 
-one thing I learned from a teammate of mine at Google was to reach out to people 30+. because when they reach some sort of senior level, they feel like it's time for them to pay it forward to the next generation.
+## 3. Being young lets you off the hook
 
-in general though, this is just a fraction of the things I learnt.
+Now, I don’t mean this as an excuse to do dumb stuff and say “it’s fine, I’m young.”  
+But being young _does_ give you room to take chances and make mistakes — and people are usually more forgiving about it.
+
+Honestly, if you’re in your early 20s, you have nothing to lose by reaching out to strangers. In fact, it’s the best time to do it.
+
+I’ve asked some pretty naive questions in the past, but people often found it endearing — partly because of my age and curiosity.
+
+One thing I noticed: reaching out to people 30+ can be surprisingly effective.  
+Once they reach a senior level, many feel it’s time to “pay it forward” to the next generation.
