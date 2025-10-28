@@ -2,7 +2,6 @@
 import Layout from "../components/Layout.astro";
 import { Image } from "astro:assets";
 import Prose from "../components/Prose.astro";
-import NowPlaying from "../components/NowPlaying.astro";
 import SubscribeForm from "../components/NewsletterForm.astro";
 import { getCollection } from "astro:content";
 import { getBlogPosts } from "../data/utils";
@@ -54,19 +53,23 @@ const linksClass = "w-fit font-bold";
     </p>
     <p>
       I'm currently working as a Software Engineer at
-      <span class="text-google-yellow"
-        ><a href="https://www.linkedin.com/company/kolizeo/" target="_blank"
-          >Kolizeo</a
-        >
+      <span class="text-google-yellow">
+        <a href="https://www.linkedin.com/company/kolizeo/" target="_blank">
+          Kolizeo
+        </a>
       </span>
-      in Metz, France. Prior to this, I was building opensource projects like Colors
-      and Karp,
+      in Metz, France. Prior to this, I was building open-source projects like
+      <a href="https://github.com/erenworld/chalk" target="_blank">Chalk</a>
+      and
+      <a href="https://github.com/erenworld/karp" target="_blank">Karp</a>, as
+      well as contributing to the
       <a href="https://web.dev/" target="_blank">Web Platform</a>
       through
       <a href="https://www.chromium.org/Home/" target="_blank">Chrome</a>
       and
       <a href="https://source.android.com/" target="_blank">Android</a>.
     </p>
+
     <p>
       I have a <a href="/blog">blog</a> where I write about stuff I find interesting
       enough to share.
