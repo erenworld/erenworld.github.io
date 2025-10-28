@@ -19,5 +19,3 @@ it's also worth mentioning not every film is fun to watch by yourself, there are
 a lot of people are surprised to hear when I say I'm watching a film alone, but I think it's generally because people are just not comfortable with their own presence.
 
 so if you've never done it before, I suggest you give it a go, it'll be a fun experience, and you'll probably meet some cool people!
-
-![](/marty.jpg)
