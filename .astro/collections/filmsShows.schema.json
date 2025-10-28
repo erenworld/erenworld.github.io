@@ -1,0 +1,30 @@
+{
+  "$ref": "#/definitions/filmsShows",
+  "definitions": {
+    "filmsShows": {
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "imageID": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "imageID"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

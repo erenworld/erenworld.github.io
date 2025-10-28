@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@plugin '@tailwindcss/typography';
+
+@theme inline {
+  --font-serif:
+    var(--font-alegreya), ui-serif, Georgia, Cambria, "Times New Roman", Times,
+    serif;
+}
+
+@theme {
+  --color-google-blue: #4885ed;
+  --color-google-red: #db3236;
+  --color-google-yellow: #f4c20d;
+  --color-google-green: #3cba54;
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+::selection {
+  @apply bg-black text-white;
+}
+
+@layer base {
+  html {
+    @apply font-serif;
+  }
+
+  a {
+    @apply hover:underline hover:text-blue-600 decoration-2 font-medium;
+  }
+
+  img {
+    @apply border-2 border-black;
+  }
+}

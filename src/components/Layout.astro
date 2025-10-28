@@ -1,0 +1,53 @@
+---
+import "../styles/global.css";
+import Nav from "./Nav.astro";
+import { Font } from "astro:assets";
+
+interface Props {
+  title?: string;
+  image?: URL;
+  post?: boolean;
+}
+
+const baseTitle = "Eren Türkoglu";
+const description = "Software Engineer at Kolizeo";
+
+const { title, post, image } = Astro.props;
+
+const fullTitle = title ? `${title} - ${baseTitle}` : baseTitle;
+---
+
+<html lang="en" class="bg-white text-black antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={baseTitle}
+      href={new URL("rss.xml", Astro.site)}
+    />
+
+    <link rel="canonical" href={Astro.url} />
+    <meta name="robots" content="index, follow" />
+
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+
+    <meta property="og:title" content={title ?? "Eren Türkoglu"} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+
+    <meta name="twitter:title" content={title ?? "Eren Türkoglu"} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@erentrkg" />
+    <meta name="twitter:image" content={image} />
+    <Font cssVariable="--font-alegreya" preload />
+  </head>
+  <body class="max-w-2xl py-8 px-6">
+    <Nav title={post ? title : undefined} />
+    <slot />
+  </body>
+</html>
