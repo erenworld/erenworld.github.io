@@ -23,7 +23,29 @@ const linksClass = "w-fit font-bold";
     <h1 class="font-bold text-2xl">Eren Türkoglu</h1>
   </div>
   <div class="h-[123px]">
-    <NowPlaying/>
+    <div class="flex flex-row items-center gap-4 mb-6">
+      <a href={"https://www.youtube.com/watch?v=zhY_0DoQCQs"} target="_blank">
+        <img
+          alt={"drake"}
+          src={"https://cdn-images.dzcdn.net/images/cover/8f0187ad83cdd1f47f1c55420f9df227/1900x1900-000000-80-0-0.jpg"}
+          height={111}
+          width={111}
+        />
+      </a>
+      <div class="flex items-center">
+        <span class="animate-spin mr-2">💿</span>
+        <a
+          href={"https://www.youtube.com/watch?v=zhY_0DoQCQs"}
+          target="_blank"
+          class="flex-1 min-w-0"
+        >
+          <span class="block max-w-50 line-clamp-1 sm:max-w-lg sm:line-clamp-2">
+            Playing <span class="font-bold">{"Do Not Disturb"}</span> by
+            <span class="font-bold">Drake</span>
+          </span>
+        </a>
+      </div>
+    </div>
   </div>
   <Prose>
     <p>
@@ -88,8 +110,10 @@ const linksClass = "w-fit font-bold";
         <a class={linksClass} href="https://x.com/erenxtrkg" target="_blank"
           >Twitter/X</a
         >
-        <a class={linksClass} href="https://github.com/erenworld" target="_blank"
-          >GitHub</a
+        <a
+          class={linksClass}
+          href="https://github.com/erenworld"
+          target="_blank">GitHub</a
         >
         <a
           class={linksClass}
