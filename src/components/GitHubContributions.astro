@@ -1,0 +1,45 @@
+---
+import { getContributions } from "../data/utils";
+
+// Fetch contributions server-side
+const contrib = await getContributions(
+  import.meta.env.PUBLIC_GITHUB_KEY,
+  "erenworld",
+);
+
+const allWeeks =
+  contrib?.data?.user?.contributionsCollection?.contributionCalendar?.weeks ??
+  [];
+
+// Get last 52 weeks (full year)
+const weeks = allWeeks.slice(-52);
+
+const hasError = !weeks || weeks.length === 0;
+---
+
+<div class="flex flex-col items-center justify-center border-2 p-2">
+  {
+    !hasError ? (
+      <div class="flex gap-1 overflow-x-auto w-full justify-center">
+        {weeks.map((week, i) => (
+          <div class="flex flex-col gap-1 flex-shrink-0">
+            {week.contributionDays.map((day) => {
+              const bgColor =
+                day.color === "#" ? "rgba(235, 237, 240, 0.15)" : day.color;
+
+              return (
+                <div
+                  class="h-[10px] w-[10px]"
+                  style={`background-color: ${bgColor};`}
+                  title={`${day.date} - ${day.contributionCount} contribution${day.contributionCount !== 1 ? "s" : ""}`}
+                />
+              );
+            })}
+          </div>
+        ))}
+      </div>
+    ) : (
+      <p class="my-1 text-red-500">Oops, error fetching from GitHub.</p>
+    )
+  }
+</div>
