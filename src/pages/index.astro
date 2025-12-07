@@ -82,7 +82,101 @@ const linksClass = "w-fit font-bold";
       </ul>
       <h3 class="font-bold">Newsletter</h3>
       <SubscribeForm />
-      <!-- Rest of your content... -->
+      <h3>Links</h3>
+      <div class="not-prose grid grid-cols-3 sm:grid-cols-4">
+        <a class={linksClass} href="https://x.com/erenxtrkg" target="_blank"
+          >Twitter/X</a
+        >
+        <a
+          class={linksClass}
+          href="https://github.com/erenworld"
+          target="_blank">GitHub</a
+        >
+        <a
+          class={linksClass}
+          href="https://www.youtube.com/@eren"
+          target="_blank">YouTube</a
+        >
+        <a
+          class={linksClass}
+          href="https://www.instagram.com/eren.turkogllu"
+          target="_blank"
+        >
+          Instagram
+        </a>
+        <a
+          class={linksClass}
+          href="https://www.linkedin.com/in/erenturkoglu"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+        <a
+          class={linksClass}
+          href="https://github.com/erenworld/personal-site"
+          target="_blank"
+        >
+          Source Code
+        </a>
+        <a
+          class={linksClass}
+          href="https://letterboxd.com/erenworld/"
+          target="_blank"
+        >
+          Letterboxd
+        </a>
+        <a class={linksClass} href="https://nav.al/happiness" target="_blank">
+          Life lesson
+        </a>
+      </div>
+    </div>
+    <div>
+      <h2>Favourites</h2>
+      <h3>Albums</h3>
+      <div class="grid grid-cols-3 sm:grid-cols-4 gap-x-6 gap-y-6 not-prose">
+        {
+          albums.map((album) => (
+            <a
+              href={`https://open.spotify.com/album/${album.id}`}
+              target="_blank"
+            >
+              <Image
+                alt={album.data.title}
+                src={`https://i.scdn.co/image/${album.data.imageID}`}
+                width={640}
+                height={640}
+              />
+            </a>
+          ))
+        }
+      </div>
+      <h3>Books</h3>
+      <div class="grid grid-cols-3 sm:grid-cols-4 gap-x-6 gap-y-6 not-prose">
+        {
+          books.map((book) => (
+            <a
+              href={`https://books.google.com/books?id=${book.id}`}
+              target="_blank"
+            >
+              <Image
+                alt={book.data.title}
+                src={`https://books.google.com/books/content?id=${book.id}&printsec=frontcover&img=1&zoom=1`}
+                width={624}
+                height={320}
+              />
+            </a>
+          ))
+        }
+      </div>
+
+      <p>
+        You can see the rest on my{" "}
+        <a
+          href="https://letterboxd.com/erenworld/likes/films/by/date/size/large/"
+        >
+          Letterboxd</a
+        >.
+      </p>
     </div>
   </Prose>
 </Layout>
