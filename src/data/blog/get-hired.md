@@ -10,7 +10,7 @@ Learn all about them. Read their blog. See what they are currently working on. F
 
 #### Show them how much you want to work for them
 
-Tell them, (in your own way), “You are my favorite company. It’s my dream to work for you. If you have any aspect that could use a little help, let medo it, and I promise you it’ll thrive. I’m that passionate about this.”
+Tell them, (in your own way), “You are my favorite company. It’s my dream to work for you. If you have any aspect that could use a little help, let me do it, and I promise you it’ll thrive. I’m that passionate about this.”
 
 #### Be Extraordinary
 
