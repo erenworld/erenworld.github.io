@@ -20,7 +20,7 @@ Now I’m 21 and I haven’t quit. I train five times a week, not extremely hard
 **At 17, I also started reading seriously.**  
 I stopped playing video games around 16–17 because they started to feel empty. I wanted something to train my brain. At school, books were imposed, so I never read them. When I started choosing books I actually liked, everything changed.
 
-Today, I’d say 80% of my knowledge comes from books. It’s incredibly efficient: you sit down and learn directly from some of the best people on earth—how they think, live, and make decisions. I especially recommend biographies and sales books.
+Today, I’d say 80% of my knowledge comes from books. It’s incredibly efficient: you sit down and learn directly from some of the best people on earth, how they think, live, and make decisions. I especially recommend biographies and sales books.
 
 **At 21, I did my first internship as a software engineer.**  
 I built a product for a startup that is used by the biggest sports clubs in my region. When you go to a basketball game in your city and see an app you built displayed on a big screen and used by thousands of people, it’s hard to describe the feeling. I’m simply proud.
