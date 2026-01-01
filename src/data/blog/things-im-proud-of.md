@@ -3,8 +3,6 @@ date: "2026-01-01"
 title: "Things I'm proud of"
 ---
 
-### Things I’m proud of
-
 I recommend everyone to make a list of the things that made them proud.  
 If something makes you proud, it usually means you learned something valuable for life.  
 Here is my list. These moments give me confidence and courage in my daily life.
