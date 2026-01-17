@@ -1,12 +1,26 @@
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
 
+/* Fonts */
 @theme inline {
   --font-serif:
     var(--font-alegreya), ui-serif, Georgia, Cambria, "Times New Roman", Times,
     serif;
+
+  --cursor-default: -webkit-image-set(url(/i/cursor@2x.png) 2x) 5 5, default;
+  --cursor-pressed:
+    -webkit-image-set(url(/i/cursor_pressed@2x.png) 2x) 5 5, default;
+
+  --cursor-hand: -webkit-image-set(url(/i/hand@2x.png) 2x) 16 4, pointer;
+  --cursor-hand-pressed:
+    -webkit-image-set(url(/i/hand_pressed@2x.png) 2x) 16 4, pointer;
+
+  --cursor-i-beam: -webkit-image-set(url(/i/ibeam@2x.png) 2x) 16 16, text;
+  --cursor-i-beam-pressed:
+    -webkit-image-set(url(/i/ibeam_pressed@2x.png) 2x) 16 16, text;
 }
 
+/* Colors */
 @theme {
   --color-google-blue: #4885ed;
   --color-google-red: #db3236;
@@ -16,17 +30,64 @@
   --color-black: #000;
 }
 
-::selection {
-  @apply bg-black text-white;
-}
-
 @layer base {
-  html {
+  html,
+  body,
+  *,
+  input[type="range"],
+  button,
+  label {
     @apply font-serif;
+    cursor: var(--cursor-default);
   }
 
-  a {
+  *:active,
+  body:active,
+  input[type="range"]:active,
+  button:not(:disabled):active,
+  label:active {
+    cursor: var(--cursor-pressed) !important;
+  }
+
+  a,
+  button,
+  [role="button"] {
+    cursor: var(--cursor-hand);
     @apply hover:underline hover:text-blue-600 decoration-2 font-medium;
+  }
+
+  a:active,
+  button:active,
+  [role="button"]:active {
+    cursor: var(--cursor-hand-pressed) !important;
+  }
+
+  input,
+  textarea,
+  [contenteditable="true"],
+  p,
+  h1,
+  h2,
+  h3,
+  article ul,
+  article ol {
+    cursor: var(--cursor-i-beam);
+  }
+
+  input:active,
+  textarea:active,
+  [contenteditable="true"]:active,
+  p:active,
+  h1:active,
+  h2:active,
+  h3:active,
+  article ul:active,
+  article ol:active {
+    cursor: var(--cursor-i-beam-pressed) !important;
+  }
+
+  ::selection {
+    cursor: var(--cursor-i-beam-pressed);
   }
 
   img {
