@@ -1,0 +1,66 @@
+---
+import Layout from "../components/Layout.astro";
+import Prose from "../components/Prose.astro";
+---
+
+<Layout title="Now" image={new URL("og/now.png", Astro.url)}>
+  <span class="flex gap-1 items-baseline">
+    <span class="flex-1">
+      <h1 class="text-2xl font-bold mb-6">What I'm doing now</h1>
+    </span>
+  </span>
+
+  <div class="mb-5">
+    <i>
+      This is a now page inspired by
+      <a href="https://sive.rs/now2" target="_blank">Derek Sivers</a>.
+      <br />
+      Updated on January 15, 2026, during winter days.
+    </i>
+  </div>
+
+  <Prose>
+    <p>
+      <b>🖥️ Working:</b> I worked at a startup called Kolizeo over the past months.
+      I enjoyed working close to real users and shipping things that actually mattered.
+    </p>
+
+    <p>
+      <b>🎨 Personal projects:</b> I&rsquo;m currently building SQLite from scratch.
+      The goal is not to recreate a full database, but to deeply understand how things
+      work under the hood: storage, paging, B-trees, persistence, and performance
+      trade-offs. I&rsquo;m learning by reading articles, books, and by writing everything
+      myself.
+    </p>
+
+    <p>
+      <b>📚 Reading:</b> One page a day from <i>The Daily Stoic</i> by Ryan Holiday.
+      It&rsquo;s a small daily habit that helps me stay grounded, especially during
+      busy or unclear periods.
+    </p>
+
+    <p>
+      <b>⛰️ Spending time:</b> Mostly in Nancy, with friends. Simple things: watching
+      movies, walking around the city, writing code, thinking, and drinking a lot
+      of coffee.
+    </p>
+
+    <p>
+      <b>🎶 Listening:</b> to a lot of Sade lately, and Turkish rock especially Şebnem
+      Ferah and Yüzyüzeyken Konuşuruz. Music helps me focus when I code and disconnect
+      when I don&rsquo;t.
+    </p>
+
+    <p>
+      <b>🏍️ Watching:</b> I&rsquo;m watching <i>The Sopranos</i>. I really fell
+      in love with the characters and the writing. The pace, the depth, the
+      silence between scenes, everything feels intentional. Easily one of the
+      best series I&rsquo;ve watched.
+    </p>
+
+    <p>
+      <b>👀 Looking forward to:</b> Having more quiet time for reading and writing,
+      going deeper into my projects, and meeting curious people.
+    </p>
+  </Prose>
+</Layout>
