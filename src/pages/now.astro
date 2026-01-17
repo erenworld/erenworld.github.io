@@ -1,6 +1,7 @@
 ---
 import Layout from "../components/Layout.astro";
 import Prose from "../components/Prose.astro";
+const linksClass = "w-fit font-bold";
 ---
 
 <Layout title="Now" image={new URL("og/now.png", Astro.url)}>
@@ -11,12 +12,14 @@ import Prose from "../components/Prose.astro";
   </span>
 
   <div class="mb-5">
-    <i>
-      This is a now page inspired by
-      <a href="https://sive.rs/now2" target="_blank">Derek Sivers</a>.
-      <br />
-      Updated on January 15, 2026, during winter days.
-    </i>
+    <Prose>
+      <i>
+        This is a now page inspired by
+        <a href="https://sive.rs/now2" target="_blank">Derek Sivers</a>.
+        <br />
+        Updated on January 15, 2026, during winter days.
+      </i>
+    </Prose>
   </div>
 
   <Prose>
@@ -34,9 +37,14 @@ import Prose from "../components/Prose.astro";
     </p>
 
     <p>
-      <b>📚 Reading:</b> One page a day from <i>The Daily Stoic</i> by Ryan Holiday.
-      It&rsquo;s a small daily habit that helps me stay grounded, especially during
-      busy or unclear periods.
+      <b>📚 Reading:</b> One page a day from <i
+        ><a
+          href="https://www.amazon.fr/Daily-Stoic-Meditations-Perseverance-Translations/dp/1781257655
+        "
+          >The Daily Stoic</a
+        >
+      </i> by Ryan Holiday. It&rsquo;s a small daily habit that helps me stay grounded,
+      especially during busy or unclear periods.
     </p>
 
     <p>
@@ -46,16 +54,28 @@ import Prose from "../components/Prose.astro";
     </p>
 
     <p>
-      <b>🎶 Listening:</b> to a lot of Sade lately, and Turkish rock especially Şebnem
-      Ferah and Yüzyüzeyken Konuşuruz. Music helps me focus when I code and disconnect
-      when I don&rsquo;t.
+      <b>🎶 Listening:</b> to a lot of <a
+        href="https://open.spotify.com/intl-fr/artist/47zz7sob9NUcODy0BTDvKx"
+        >Sade</a
+      > lately, and Turkish rock especially <a
+        href="https://open.spotify.com/intl-fr/artist/74xBVPWYoSf5pvo5IkePRO"
+        >Şebnem Ferah</a
+      > and <a
+        href="https://open.spotify.com/intl-fr/artist/7gobcoscOfsY0nOeqqFzvU"
+      >
+        Yüzyüzeyken Konuşuruz</a
+      >. Music helps me focus when I code and disconnect when I don&rsquo;t.
     </p>
 
     <p>
-      <b>🏍️ Watching:</b> I&rsquo;m watching <i>The Sopranos</i>. I really fell
-      in love with the characters and the writing. The pace, the depth, the
-      silence between scenes, everything feels intentional. Easily one of the
-      best series I&rsquo;ve watched.
+      <b>🏍️ Watching:</b> I&rsquo;m watching <i>
+        <a
+          href="https://www.hbomax.com/fr/fr/shows/sopranos/818c3d9d-1831-48a6-9583-0364a7f98453"
+          >The Sopranos</a
+        ></i
+      >. I really fell in love with the characters and the writing. The pace,
+      the depth, the silence between scenes, everything feels intentional.
+      Easily one of the best series I&rsquo;ve watched.
     </p>
 
     <p>
