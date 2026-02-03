@@ -1,19 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Eren Türkoglu</title><description/><link>https://erenworld.github.io/</link><item><title>On working at startup</title><link>https://erenworld.github.io/startup/</link><guid isPermaLink="true">https://erenworld.github.io/startup/</guid><pubDate>Tue, 30 Dec 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h4&gt;Focus on one company&lt;/h4&gt;
-&lt;p&gt;Learn all about them. Read their blog. See what they are currently working on. For example, on the Cloudflare blog, you can see how they solve their problems.
-&lt;a href=&quot;https://blog.cloudflare.com/how-we-found-a-bug-in-gos-arm64-compiler/&quot;&gt;How we found a bug in Go’s ARM64 compiler&lt;/a&gt;. Each engineer writes about their approach to solving a problem. Contact those engineers. Solve problems for them. Improve their open-source codebase. Make a pull request. Don’t use AI. Show your real skills.&lt;/p&gt;
-</content:encoded></item><item><title>Minimal Neovim setup from scratch</title><link>https://erenworld.github.io/neovim/</link><guid isPermaLink="true">https://erenworld.github.io/neovim/</guid><pubDate>Fri, 26 Dec 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h4&gt;Focus on one company&lt;/h4&gt;
-&lt;p&gt;Learn all about them. Read their blog. See what they are currently working on. For example, on the Cloudflare blog, you can see how they solve their problems.
-&lt;a href=&quot;https://blog.cloudflare.com/how-we-found-a-bug-in-gos-arm64-compiler/&quot;&gt;How we found a bug in Go’s ARM64 compiler&lt;/a&gt;. Each engineer writes about their approach to solving a problem. Contact those engineers. Solve problems for them. Improve their open-source codebase. Make a pull request. Don’t use AI. Show your real skills.&lt;/p&gt;
-&lt;h4&gt;Show them how much you want to work for them&lt;/h4&gt;
-&lt;p&gt;Tell them, (in your own way), “You are my favorite company. It’s my dream to work for you. If you have any aspect that could use a little help, let me do it, and I promise you it’ll thrive. I’m that passionate about this.”&lt;/p&gt;
-&lt;h4&gt;Be Extraordinary&lt;/h4&gt;
-&lt;p&gt;Resumes are boring. What really stands out is when someone is extraordinary.
-Build a personal brand on a very specific niche. Be like the expert of the field. Post daily on X. Build side projects who shows what you are capable of.&lt;/p&gt;
-&lt;h4&gt;Be persistent (though succinct)&lt;/h4&gt;
-&lt;p&gt;Combine phone, email, and in-person. You must use all three methods, since each has its strengths.&lt;/p&gt;
-&lt;p&gt;Always be succinct. Don’t take more than two minutes of their time. But always show your passion, and how much you can help them.&lt;/p&gt;
-&lt;p&gt;Do this every week. It’s OK to be almost annoying. Polite manners don’t prove passion.&lt;/p&gt;
-&lt;h4&gt;Do this until hired&lt;/h4&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Eren Türkoglu</title><description/><link>https://erenworld.github.io/</link><item><title>I am really starting to hate web development</title><link>https://erenworld.github.io/frameworks/</link><guid isPermaLink="true">https://erenworld.github.io/frameworks/</guid><pubDate>Tue, 03 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I wrote my first line of JavaScript in 2020.&lt;/p&gt;
+&lt;p&gt;At the time, I was studying economics and following Colt Steele’s bootcamp on the side, mostly because my courses were painfully boring. That’s how I discovered web development.&lt;/p&gt;
+&lt;p&gt;I learned to build a simple CRUD application using plain JavaScript, HTML templates, Bootstrap CSS, and MySQL.
+The setup was fast. The mental model was simple. You could actually understand what was happening.&lt;/p&gt;
+&lt;p&gt;Six years later, web development feels massively overengineered.&lt;/p&gt;
+&lt;p&gt;Next.js, React, Angular, Vue, Meteor, Polymer, Astro… the list never ends.&lt;/p&gt;
+&lt;p&gt;Many junior developers struggle to write a simple button that opens a modal using plain JavaScript. That’s not their fault, but it’s still sad. Fundamentals are being skipped in favor of abstractions.&lt;/p&gt;
+&lt;p&gt;I miss the time when we didn’t need 200 dependencies just to render a page.&lt;/p&gt;
+&lt;p&gt;Frameworks solve real problems, but not every problem needs a framework.&lt;/p&gt;
+&lt;p&gt;Why overcomplicate something that has been solved for decades?&lt;/p&gt;
+</content:encoded></item><item><title>Things I&apos;m proud of</title><link>https://erenworld.github.io/things-im-proud-of/</link><guid isPermaLink="true">https://erenworld.github.io/things-im-proud-of/</guid><pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I recommend everyone to make a list of the things that made them proud.&lt;br /&gt;
+If something makes you proud, it usually means you learned something valuable for life.&lt;br /&gt;
+Here is my list. These moments give me confidence and courage in my daily life.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;At 10, I helped my parents stop smoking.&lt;/strong&gt;&lt;br /&gt;
+This is probably the most meaningful thing I’ve ever done. I was a kid watching TV when I saw an ad saying that if you smoke, you die. In the ad, there was a scene with a child and their parents smoking; after a break, the child was walking alone. I remember thinking: &lt;em&gt;my parents smoke too… will I be alone?&lt;/em&gt; I started crying.&lt;/p&gt;
+&lt;p&gt;It was December 31st, the whole family was at home. I think it really shocked my parents. They started reducing their consumption, and after three months, no more cigarettes. They ate more and drank more coffee, but that’s still better than smoking. I cried at the right time, and it changed our lives.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;At 17, I started going to the gym.&lt;/strong&gt;&lt;br /&gt;
+I was skinny, no girlfriend, nothing, just my PlayStation and Coca-Cola. I started lifting weights, running, and swimming. I’ve always been a bit hyperactive, so sport fit me well.&lt;/p&gt;
+&lt;p&gt;Now I’m 21 and I haven’t quit. I train five times a week, not extremely hard, but consistently. I believe in long-term consistency rather than short bursts of intensity. As a bonus, my parents now go to the gym too. My dad is 50 and in great shape.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;At 17, I also started reading seriously.&lt;/strong&gt;&lt;br /&gt;
+I stopped playing video games around 16–17 because they started to feel empty. I wanted something to train my brain. At school, books were imposed, so I never read them. When I started choosing books I actually liked, everything changed.&lt;/p&gt;
+&lt;p&gt;Today, I’d say 80% of my knowledge comes from books. It’s incredibly efficient: you sit down and learn directly from some of the best people on earth, how they think, live, and make decisions. I especially recommend biographies and sales books.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;At 21, I did my first internship as a software engineer.&lt;/strong&gt;&lt;br /&gt;
+I built a product for a startup that is used by the biggest sports clubs in my region. When you go to a basketball game in your city and see an app you built displayed on a big screen and used by thousands of people, it’s hard to describe the feeling. I’m simply proud.&lt;/p&gt;
 </content:encoded></item><item><title>How to get hired</title><link>https://erenworld.github.io/get-hired/</link><guid isPermaLink="true">https://erenworld.github.io/get-hired/</guid><pubDate>Mon, 15 Dec 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h4&gt;Focus on one company&lt;/h4&gt;
 &lt;p&gt;Learn all about them. Read their blog. See what they are currently working on. For example, on the Cloudflare blog, you can see how they solve their problems.
 &lt;a href=&quot;https://blog.cloudflare.com/how-we-found-a-bug-in-gos-arm64-compiler/&quot;&gt;How we found a bug in Go’s ARM64 compiler&lt;/a&gt;. Each engineer writes about their approach to solving a problem. Contact those engineers. Solve problems for them. Improve their open-source codebase. Make a pull request. Don’t use AI. Show your real skills.&lt;/p&gt;
