@@ -27,6 +27,8 @@ export default function RootLayout({
       <body className="antialiased tracking-tight">
         <div className="min-h-screen flex flex-col justify-between pt-0 md:pt-8 p-8 dark:bg-zinc-950 bg-white text-gray-900 dark:text-zinc-200">
           <main className="max-w-[60ch] mx-auto w-full space-y-6">
+            <Navbar />
+
             {children}
           </main>
           <Footer />
@@ -34,6 +36,25 @@ export default function RootLayout({
         </div>
       </body>
     </html>
+  );
+}
+function Navbar() {
+  return (
+    <nav>
+      <div className=" gap-x-2 items-center">
+        <span>
+          ~ / <a href="/">home</a> /{' '}
+          <a
+            href="https://github.com/erenworld"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github
+          </a>{' '}
+          / <a href="mailto:erenkad@proton.me">email</a>
+        </span>
+      </div>
+    </nav>
   );
 }
 
