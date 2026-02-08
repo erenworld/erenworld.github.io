@@ -1,66 +1,36 @@
 export const metadata = {
-  title: '5 Tiny CLI Tricks You (Probably) Didn’t Know',
+  title: 'How to get hired',
   alternates: {
     canonical: '/n/1',
   },
 };
 
-# 5 Tiny CLI Tricks You (Probably) Didn’t Know
+# How to get hired
 
 <br />
 
-A lightning-round of command-line nuggets to level-up your dev workflow.
+Learn how to sell yourself.
 
-## 1. **`history | grep` + `fzf` = instant recall**
+## 1. Focus on one company
 
-Fish out that elusive command you ran last Tuesday:
+Learn everything about the company you are targeting. Read their blog.
+Understand what they are currently building and the problems they are solving.
+For example, the Cloudflare blog shows how their engineers approach real production issues, such as in How we found a bug in Go’s ARM64 compiler. Each article reflects a concrete way of thinking and problem-solving.
 
-```bash
-history | grep docker | fzf
-````
+Identify the engineers behind this work. Reach out to them. Solve problems that matter to them. Improve their open-source codebases and submit meaningful pull requests. Avoid using AI for this step. Show real, hands-on skills.
 
-Hit **Enter** and it pastes right back to your prompt like magic.
+## 2. Show them how much you want to work for them
 
----
+Tell them, (in your own way), “You are my favorite company. It’s my dream to work for you. If you have any aspect that could use a little help, let me do it, and I promise you it’ll thrive. I’m that passionate about this.”
 
-## 2. **Reverse-search a Git log by file *content***
+## 3. Be extraordinary
 
-Combine `git log` with `-S` (search diff) to find when a string first appeared:
+Resumes are boring. What really stands out is when someone is extraordinary. Build a personal brand on a very specific niche. Be like the expert of the field. Post daily on X. Build side projects who shows what you are capable of.
 
-```bash
-git log -S"resizeObserver" --oneline -- src/components/Layout.tsx
-```
+## 4. Be persistent
 
----
+Combine phone, email, and in-person. You must use all three methods, since each has its strengths.
+Always be succinct. Don’t take more than two minutes of their time. But always show your passion, and how much you can help them.
+Do this every week. It’s OK to be almost annoying. Polite manners don’t prove passion.
 
-## 3. **JSON-pretty print … with zero dependencies**
-
-Mac & Linux already ship with `python3`:
-
-```bash
-cat response.json | python3 -m json.tool | less
-```
-
----
-
-## 4. **One-liner port-forwarding for quick demos**
-
-Need to expose `localhost:3000`? Use SSH—no ngrok token needed.
-
-```bash
-ssh -R 80:localhost:3000 ssh.localhost.run
-```
-
-Now share the generated URL on Slack and watch eyebrows rise.
-
----
-
-## 5. **Measure *anything* with `time` + subshell**
-
-How long does your linter actually take?
-
-```bash
-time (npm run lint > /dev/null)
-```
-
-> 💡 *Pro-tip:* wrap this in a `pre-push` hook so slow commands get caught early.
+> 💡 Do this until hired.
