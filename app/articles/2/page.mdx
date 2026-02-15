@@ -1,135 +1,34 @@
 export const metadata = {
-  title: '6 Sneaky JavaScript Patterns to Cut Boilerplate',
+  title: 'Things I am proud of',
   alternates: {
     canonical: '/n/2',
   },
 };
 
-# 6 Sneaky JavaScript Patterns to Cut Boilerplate
+# Things i'm proud of
 
 <br />
 
-Micro-optimizations and quality-of-life hacks to keep your scripts lean, readable, and bug-resistant.
+I recommend everyone to make a list of the things that made them proud. If something makes you proud, it usually means you learned something valuable for life.
 
-## 1. **Optional Chaining `?.` + Nullish Coalescing `??`**
+**At 10, I helped my parents stop smoking.**
 
-Stop writing five nested guards:
+This is probably the most meaningful thing I’ve ever done. I was a kid watching TV when I saw an ad saying that if you smoke, you die. In the ad, there was a scene with a child and their parents smoking; after a break, the child was walking alone. I remember thinking: *my parents smoke too… will I be alone?* I started crying.
 
-```js
-// Old
-const theme = user && user.settings && user.settings.theme
-  ? user.settings.theme
-  : 'light';
+It was December 31st, the whole family was at home. I think it really shocked my parents. They started reducing their consumption, and after three months, no more cigarettes. They ate more and drank more coffee, but that’s still better than smoking. I cried at the right time, and it changed our lives.
 
-// New
-const theme = user?.settings?.theme ?? 'light';
-````
+**At 17, I started going to the gym.**
 
-Fewer lines, same safety.
+I was skinny, no girlfriend, nothing, just my PlayStation and Coca-Cola. I started lifting weights, running, and swimming. I’ve always been a bit hyperactive, so sport fit me well.
 
----
+Now I’m 21 and I haven’t quit. I train five times a week, not extremely hard, but consistently. I believe in long-term consistency rather than short bursts of intensity. As a bonus, my parents now go to the gym too. My dad is 50 and in great shape.
 
-## 2. **Barrel Files for One-Line Imports**
+**At 17, I also started reading seriously.**
 
-Aggregate related exports into a single “barrel” file:
+I stopped playing video games around 16–17 because they started to feel empty. I wanted something to train my brain. At school, books were imposed, so I never read them. When I started choosing books I actually liked, everything changed.
 
-```js
-// utils/index.js
-export * from './format';
-export * from './validate';
-export * from './fetch';
+Today, I’d say 80% of my knowledge comes from books. It’s incredibly efficient: you sit down and learn directly from some of the best people on earth, how they think, live, and make decisions. I especially recommend biographies and sales books.
 
-// SomeComponent.js
-import { formatDate, validateEmail, getJSON } from '@/utils';
-```
+**At 21, I did my first internship as a software engineer.**
 
-Kill import clutter without sacrificing tree-shaking.
-
----
-
-## 3. **Memoize Pure Functions with a `WeakMap`**
-
-Cache heavy computations tied to objects—no leaks:
-
-```js
-const cache = new WeakMap();
-
-export function expensive(obj) {
-  if (cache.has(obj)) return cache.get(obj);
-  const result = crunchNumbers(obj); // 🚀 costly
-  cache.set(obj, result);
-  return result;
-}
-```
-
-Results follow the object’s lifetime—GC does the cleanup.
-
----
-
-## 4. **Tagged Template Literals for Safe HTML**
-
-Prevent XSS without a third-party lib:
-
-```js
-const escape = (strings, ...values) =>
-  strings.reduce(
-    (acc, str, i) =>
-      acc +
-      str +
-      (values[i]
-        ? String(values[i]).replace(/[&<>"']/g, (s) => ({
-            '&': '&amp;',
-            '<': '&lt;',
-            '>': '&gt;',
-            '"': '&quot;',
-            "'": '&#39;',
-          })[s])
-        : ''),
-    '',
-  );
-
-const name = '<script>alert(1)</script>';
-document.body.innerHTML = escape`<p>Hello, ${name}!</p>`;
-```
-
-Zero dependencies, maximum safety.
-
----
-
-## 5. **`AbortController` for Cancellable `fetch`**
-
-Stop orphaning network calls on route changes:
-
-```js
-const controller = new AbortController();
-const { signal } = controller;
-
-fetch('/api/data', { signal })
-  .then((r) => r.json())
-  .catch((e) => {
-    if (e.name !== 'AbortError') throw e;
-  });
-
-// later…
-controller.abort();
-```
-
-No more “state update on unmounted component” warnings.
-
----
-
-## 6. **Format Like a Native with `Intl`**
-
-Forget custom helpers—use the built-ins:
-
-```js
-const usd = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'USD',
-}).format(1999.99); // "$1,999.99"
-
-const isoDate = new Intl.DateTimeFormat('sv-SE').format(new Date());
-// "2025-06-05"
-```
-
-Locale-aware, performant, and zero bloat.
+I built a product for a startup that is used by the biggest sports clubs in my region. When you go to a basketball game in your city and see an app you built displayed on a big screen and used by thousands of people, it’s hard to describe the feeling. I’m simply proud.
